@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>ABB</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body class="w3-white">
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+      <img src="assets/abb-logo-vector.png" style="width:80%">
+      <a href="main.html" class="w3-bar-item w3-button w3-padding-large w3-white">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+      </a>
+      <a href="material.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+        <i class="fa fa-th w3-xxlarge"></i>
+        <p>Materials</p>
+      </a>
+      <a href="order.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+        <i class="fa fa-clock-o w3-xxlarge"></i>
+        <p>Orders<span class="w3-badge w3-right w3-small w3-red">4</span></p>
+      </a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CONTACT</p>
+      </a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+        <i class="fa fa-cog w3-xxlarge w3"></i>
+        <p>SETTINGS</p>
+      </a>
+      <a href="login.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+        <i class="fa fa-sign-out w3-xxlarge"></i>
+        <p>SIGN OUT</p>
+      </a>
+    </nav>
+
+    <!-- Navbar on small screens -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+      <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+        <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">SETTINGS</a>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+      <div class="w3-col m7">
+        
+        <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+          <div class="w3-bar w3-flat-clouds w3-margin-left ">
+            <button class="w3-bar-item w3-button w3-flat-alizarin" onclick="openCity('London')">Need to be ordered</button>
+            <button class="w3-bar-item w3-button w3-flat-belize-hole" onclick="openCity('Paris')">On hold</button>
+            <button class="w3-bar-item w3-button w3-flat-green-sea" onclick="openCity('Tokyo')">Ordered material</button>
+          </div>
+          <br> 
+          <div id="London" class="w3-container city">
+            <div class="w3-container">
+              <table class="w3-table-all">
+                <thead>
+                  <tr class="w3-flat-alizarin">
+                    <th>Material name</th>
+                    <th>Type</th>
+                    <th>Code</th>
+                    <th>tk.</th>
+                    <th>Category</th>
+                    <th>Location</th>
+                    <th>Time</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td>10x30</td>
+                  <td>Combi</td>
+                  <td>3AXD00000000</td>
+                  <td>500</td>
+                  <td>Bolts</td>
+                  <td>Zone A</td>
+                  <td>10:30</td>
+                  <td><button class="w3-button w3-tiny w3-border"><i class="fa fa-search" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-blue"><i class="fa fa-snowflake-o" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-green"><i class="fa fa-check" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-red"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+                </tr>
+                <tr>
+                  <td>12x40</td>
+                  <td>Combi</td>
+                  <td>3AXD00000000</td>
+                  <td>50</td>
+                  <td>Bolts</td>
+                  <td>Zone A</td>
+                  <td>10:30</td>
+                  <td><button class="w3-button w3-tiny w3-border"><i class="fa fa-search" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-blue"><i class="fa fa-snowflake-o" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-green"><i class="fa fa-check" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-red"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Flat</td>
+                  <td>3AXD00000000</td>
+                  <td>1000</td>
+                  <td>Washer's</td>
+                  <td>Cork</td>
+                  <td>11:30</td>
+                  <td><button class="w3-button w3-tiny w3-border"><i class="fa fa-search" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-blue"><i class="fa fa-snowflake-o" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-green"><i class="fa fa-check" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-red"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Cone</td>
+                  <td>3AXD00000000</td>
+                  <td>1000</td>
+                  <td>Washer's</td>
+                  <td>Cork</td>
+                  <td>11:30</td>
+                  <td><button class="w3-button w3-tiny w3-border"><i class="fa fa-search" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-blue"><i class="fa fa-snowflake-o" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-green"><i class="fa fa-check" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-red"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          
+          <div id="Paris" class="w3-container city" style="display:none">
+            <div class="w3-container">                
+            
+              <table class="w3-table-all">
+                <thead>
+                  <tr class="w3-flat-belize-hole">
+                    <th>Material name</th>
+                    <th>Type</th>
+                    <th>Code</th>
+                    <th>tk.</th>
+                    <th>Category</th>
+                    <th>Location</th>
+                    <th>Time</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>            
+                <tr>
+                  <td>12x40</td>
+                  <td>Combi</td>
+                  <td>3AXD00000000</td>
+                  <td>50</td>
+                  <td>Bolts</td>
+                  <td>Zone A</td>
+                  <td>10:30</td>
+                  <td><button class="w3-button w3-tiny w3-border"><i class="fa fa-search" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-blue"><i class="fa fa-snowflake-o" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-green"><i class="fa fa-check" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-red"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Flat</td>
+                  <td>3AXD00000000</td>
+                  <td>1000</td>
+                  <td>Washer's</td>
+                  <td>Cork</td>
+                  <td>11:30</td>
+                  <td><button class="w3-button w3-tiny w3-border"><i class="fa fa-search" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-blue"><i class="fa fa-snowflake-o" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-green"><i class="fa fa-check" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-red"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Cone</td>
+                  <td>3AXD00000000</td>
+                  <td>1000</td>
+                  <td>Washer's</td>
+                  <td>Cork</td>
+                  <td>11:30</td>
+                  <td><button class="w3-button w3-tiny w3-border"><i class="fa fa-search" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-blue"><i class="fa fa-snowflake-o" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-green"><i class="fa fa-check" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-red"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          
+          <div id="Tokyo" class="w3-container city" style="display:none">
+            <div class="w3-container">       
+            
+              <table class="w3-table-all">
+                <thead>
+                  <tr class="w3-flat-green-sea">
+                    <th>Material name</th>
+                    <th>Type</th>
+                    <th>Code</th>
+                    <th>tk.</th>
+                    <th>Category</th>
+                    <th>Location</th>
+                    <th>Time</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td>10x30</td>
+                  <td>Combi</td>
+                  <td>3AXD00000000</td>
+                  <td>500</td>
+                  <td>Bolts</td>
+                  <td>Zone A</td>
+                  <td>10:30</td>
+                  <td><button class="w3-button w3-tiny w3-border"><i class="fa fa-search" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-blue"><i class="fa fa-snowflake-o" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-green"><i class="fa fa-check" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-red"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+                </tr>
+                <tr>
+                  <td>12x40</td>
+                  <td>Combi</td>
+                  <td>3AXD00000000</td>
+                  <td>50</td>
+                  <td>Bolts</td>
+                  <td>Zone A</td>
+                  <td>10:30</td>
+                  <td><button class="w3-button w3-tiny w3-border"><i class="fa fa-search" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-blue"><i class="fa fa-snowflake-o" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-green"><i class="fa fa-check" aria-hidden="true"></i></button></td>
+                  <td><button class="w3-button w3-tiny w3-red"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+                </tr>           
+                
+              </table>
+            </div>
+          </div>        
+          <script>
+          function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            document.getElementById(cityName).style.display = "block";  
+          }
+          </script>      
+          <br>
+        </div>      
+        <!-- End Middle Column -->
+      </div>
+      <!-- END PAGE CONTENT -->
+    </div>
+  </body>
+</html>

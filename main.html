@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ABB</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body class="w3-white">
+
+    <!-- LEFT UI-->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+      <img src="assets/abb-logo-vector.png" style="width:80%">
+      <a href="main.html" class="w3-bar-item w3-button w3-padding-large w3-white">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+      </a>
+      <a href="material.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+        <i class="fa fa-th w3-xxlarge"></i>
+        <p>Materials</p>
+      </a>
+      <a href="order.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+        <i class="fa fa-clock-o w3-xxlarge"></i>
+        <p>Orders<span class="w3-badge w3-right w3-small w3-red">4</span></p>
+      </a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CONTACT</p>
+      </a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-white ">
+        <i class="fa fa-cog w3-xxlarge w3 "></i>
+        <p>SETTINGS</p>
+      </a>
+      <a href="login.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+        <i class="fa fa-sign-out w3-xxlarge"></i>
+        <p>SIGN OUT</p>
+      </a>
+    </nav>
+    <!-- LEFT UI END -->
+
+    <!-- MOBILE UI -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+      <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+        <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">SETTINGS</a>
+        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">SIGN OUT</a>
+      </div>
+    </div>
+    <!-- MOBILE UI END -->
+
+    <!-- MID -->
+    <div class="w3-padding-large" id="main">
+      <div class="w3-col m7">        
+        <div class="w3-row-padding">
+          <div class="w3-col m12">
+            <div class="w3-card w3-round w3-white">
+              <div class="w3-container w3-padding">
+                <!--  MAT INFO -->
+                  <a href="material.html">
+                    <div class="w3-quarter">
+                      <div class="w3-container w3-flat-clouds w3-padding-16">
+                        <div class="w3-left"><i class="fa fa-th w3-xxlarge"></i></div>
+                        <div class="w3-right">
+                          <h3>350</h3>
+                        </div>
+                        <div class="w3-clear"></div>
+                        <h4>Materials</h4>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="w3-quarter">
+                    <div class="w3-container w3-flat-green-sea w3-padding-16">
+                      <div class="w3-left"><i class="fa fa-truck w3-xxlarge"></i></div>
+                      <div class="w3-right">
+                        <h3>10</h3>
+                      </div>
+                      <div class="w3-clear"></div>
+                      <h4>In order</h4>
+                    </div>
+                  </div>
+                  <div class="w3-quarter">
+                    <div class="w3-container w3-flat-belize-hole w3-padding-16">
+                      <div class="w3-left"><i class="fa fa-pause w3-xxlarge"></i></div>
+                      <div class="w3-right">
+                        <h3>5</h3>
+                      </div>
+                      <div class="w3-clear"></div>
+                      <h4>On hold</h4>
+                    </div>
+                  </div>
+                  <a href="order.html">
+                  <div class="w3-quarter">
+                    <div class="w3-container w3-flat-alizarin w3-text-white w3-padding-16">
+                      <div class="w3-left"><i class="fa fa-clock-o w3-xxlarge"></i></div>
+                      <div class="w3-right">
+                        <h3>4</h3>
+                      </div>
+                      <div class="w3-clear"></div>
+                      <h4>Waiting</h4>
+                    </div>
+                  </div>
+                </a>
+              <!-- MAT INFO END -->
+              </div>
+            </div>
+          </div>          
+        </div>
+        <!-- Reminder -->
+        <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+          <h3>Reminder:</h3>
+          <div id="id01" class="w3-border  w3-round w3-padding w3-margin-bottom">
+              <img src="assets/face_m.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">        
+              <span onclick="document.getElementById('id01').style.display='none'" class="w3-right w3-button w3-red " title="Close Modal">Delete</span>   
+              <h4>Chandler Bing  <strong class="w3-monospace w3-small w3-margin-left"> Engineer</strong></h4>
+              <hr class="w3-clear">
+              <p>As soon as new revision material arrives (3AXD00000000) , please let me know right away.</p>
+          </div>
+          <div id="id02" class="w3-border  w3-round w3-padding w3-margin-bottom">
+              <img src="assets/face_w.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+              <span onclick="document.getElementById('id02').style.display='none'" class="w3-right w3-button w3-red " title="Close Modal">Delete</span>                 
+              <h4>Josie  Huff  <strong class="w3-monospace w3-small w3-margin-left"> Foreman</strong></h4>
+              <hr class="w3-clear">
+              <p>Please do not order doors for project 1086051611.
+                The problem with the size of the doors, we are waiting for an answer from the engineer.</p>
+          </div>
+          <div  class="w3-border  w3-round w3-padding w3-margin-bottom">      
+              <p><label for="w3review">You can write text for reminding here:</label></p>
+              <input class="w3-input  w3-border" type="text" style="width:90%; height:30px;">
+              <br>
+              <input type="submit" value="Submit">        
+          </div>
+        </div>
+        <!-- Reminder END-->
+      </div>
+    </div>
+    <!-- MID END -->
+  </body>
+</html>

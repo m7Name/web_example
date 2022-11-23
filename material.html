@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ABB</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+<body class="w3-white">
+
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <img src="assets/abb-logo-vector.png" style="width:80%">
+    <a href="main.html" class="w3-bar-item w3-button w3-padding-large w3-white">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>HOME</p>
+    </a>
+    <a href="material.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+      <i class="fa fa-th w3-xxlarge"></i>
+      <p>Materials</p>
+    </a>
+    <a href="order.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+      <i class="fa fa-clock-o w3-xxlarge"></i>
+      <p>Orders<span class="w3-badge w3-right w3-small w3-red">4</span></p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+      <i class="fa fa-cog w3-xxlarge w3"></i>
+      <p>SETTINGS</p>
+    </a>
+    <a href="login.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+      <i class="fa fa-sign-out w3-xxlarge"></i>
+      <p>SIGN OUT</p>
+    </a>
+  </nav>
+
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">SETTINGS</a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+    <div class="w3-col m7">
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-white">
+            <div class="w3-container w3-padding-16">
+              <div class="w3-row-padding">
+                <div class="w3-third">
+                  <input class="w3-input w3-border w3-padding" type="text" placeholder="Search for names.." id="myInput" onkeyup="myFunction()">
+                </div>             
+                <div class="w3-third">
+                  <select class="w3-select" name="option">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
+                </div>
+                <div class="w3-third">
+                  <button class="w3-button w3-white w3-border">Button</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-white">
+            <table class="w3-table w3-bordered" id="myTable">
+              <thead>
+                <tr class="">
+                  <th>Material name</th>
+                  <th>Type</th>
+                  <th>Code</th>
+                  <th>tk.</th>
+                  <th>Category</th>
+                  <th>Location</th>
+                  <th>Time</th>                
+                </tr>
+              </thead>
+              <tr>
+                <td>10x30</td>
+                <td>Combi</td>
+                <td>3AXD00000000</td>
+                <td>500</td>
+                <td>Bolts</td>
+                <td>Zone A</td>
+                <td>10:30</td>              
+              </tr>
+              <tr>
+                <td>12x40</td>
+                <td>Combi</td>
+                <td>3AXD00000000</td>
+                <td>50</td>
+                <td>Bolts</td>
+                <td>Zone A</td>
+                <td>10:30</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Flat</td>
+                <td>3AXD00000000</td>
+                <td>1000</td>
+                <td>Washer's</td>
+                <td>Cork</td>
+                <td>11:30</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Cone</td>
+                <td>3AXD00000000</td>
+                <td>1000</td>
+                <td>Washer's</td>
+                <td>Cork</td>
+                <td>11:30</td>
+              </tr>
+              <tr>
+                <td>12x40</td>
+                <td>Combi</td>
+                <td>3AXD00000000</td>
+                <td>50</td>
+                <td>Bolts</td>
+                <td>Zone A</td>
+                <td>10:30</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Flat</td>
+                <td>3AXD00000000</td>
+                <td>1000</td>
+                <td>Washer's</td>
+                <td>Cork</td>
+                <td>11:30</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Cone</td>
+                <td>3AXD00000000</td>
+                <td>1000</td>
+                <td>Washer's</td>
+                <td>Cork</td>
+                <td>11:30</td>
+              </tr>
+              <tr>
+                <td>12x40</td>
+                <td>Combi</td>
+                <td>3AXD00000000</td>
+                <td>50</td>
+                <td>Bolts</td>
+                <td>Zone A</td>
+                <td>10:30</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Flat</td>
+                <td>3AXD00000000</td>
+                <td>1000</td>
+                <td>Washer's</td>
+                <td>Cork</td>
+                <td>11:30</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Cone</td>
+                <td>3AXD00000000</td>
+                <td>1000</td>
+                <td>Washer's</td>
+                <td>Cork</td>
+                <td>11:30</td>
+              </tr>
+              <tr>
+                <td>12x40</td>
+                <td>Combi</td>
+                <td>3AXD00000000</td>
+                <td>50</td>
+                <td>Bolts</td>
+                <td>Zone A</td>
+                <td>10:30</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Flat</td>
+                <td>3AXD00000000</td>
+                <td>1000</td>
+                <td>Washer's</td>
+                <td>Cork</td>
+                <td>11:30</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Cone</td>
+                <td>3AXD00000000</td>
+                <td>1000</td>
+                <td>Washer's</td>
+                <td>Cork</td>
+                <td>11:30</td>
+              </tr>
+              <tr>
+                <td>12x40</td>
+                <td>Combi</td>
+                <td>3AXD00000000</td>
+                <td>50</td>
+                <td>Bolts</td>
+                <td>Zone A</td>
+                <td>10:30</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Flat</td>
+                <td>3AXD00000000</td>
+                <td>1000</td>
+                <td>Washer's</td>
+                <td>Cork</td>
+                <td>11:30</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Cone</td>
+                <td>3AXD00000000</td>
+                <td>1000</td>
+                <td>Washer's</td>
+                <td>Cork</td>
+                <td>11:30</td>
+              </tr>
+              
+            </table>
+          <br>
+          <div class="w3-bar w3-center">
+            <a href="#" class="w3-button">&laquo;</a>
+            <a href="#" class="w3-button">1</a>
+            <a href="#" class="w3-button">2</a>
+            <a href="#" class="w3-button">3</a>
+            <a href="#" class="w3-button">4</a>
+            <a href="#" class="w3-button">5</a>
+            <a href="#" class="w3-button">&raquo;</a>
+          </div>
+          <br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        var input, filter, table, tr, td, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[4];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+    </script>
+    <!-- END PAGE CONTENT -->
+  </div>
+    <!-- Right Column -->
+    <div class="w3-col m2">      
+      <div class="w3-card w3-round w3-white w3-padding-16 w3-center">           
+        <div class="w3-container">       
+          <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-border">Add Material</button>      
+          <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">                 
+              <form class="w3-container w3-card-4 w3-padding-16">              
+                <p><label>Material name</label>
+                <input class="w3-input w3-border" name="first" type="text"></p>            
+                <p><label>Type</label>
+                <input class="w3-input w3-border" name="last" type="text"></p>
+                <p><label>Code</label>
+                <input class="w3-input w3-border" name="last" type="text"></p>
+                <p><label>tk.</label>
+                <input class="w3-input w3-border" name="last" type="text"></p>
+                <p><label>Category</label>
+                <input class="w3-input w3-border" name="last" type="text"></p>
+                <p><label>Location</label>
+                  <select class="w3-select" name="option">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>             
+              </form>      
+              <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+                <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-green">Save</button>
+              </div>      
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>    
+      <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+        <p></p>
+      </div>    
+      <!-- End Right Column -->
+    </div>
+  </body>
+</html>
